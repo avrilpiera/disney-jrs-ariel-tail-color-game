@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <title>Ariel's Tail Color Game</title>
+</head>
+<body>
+    
+    <div class="startPage">
+        <h1>Ariel's Tail Color Game</h1>
+        <img src="logo.webp" alt="Disney Jr.'s Ariel">
+        <button onclick="startGame()">Play</button>
+    </div>
+
+
+    <div class="gamePage">
+        <h3>When Ariel's Tail Is:</h3>
+        <div class="imageSection">
+            <img src="ariel.webp" alt="" class="ariel-image">
+        </div>
+
+        <h2>What does it mean?</h2>
+        <div class="options">
+            <button class="option" onclick="pick(this)">Happy</button>
+            <button class="option" onclick="pick(this)">Grumpy</button>
+            <button class="option" onclick="pick(this)">Idea</button>
+            <button class="option" onclick="pick(this)">Warm</button>
+        </div>
+
+        <h4>Correct Answers: <span id="correctAnswers"></span> </h4>
+        <h4>Incorrect Answers: <span id="incorrectAnswers"></span> </h4>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

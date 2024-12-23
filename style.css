@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Englebert", serif;
+}
+
+.correct {
+    background-color: #63ff6d !important;
+}
+
+.incorrect {
+    background-color: #ff6060 !important;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: linear-gradient(#2ee3ff, #94f1ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #94f1ff;
+    
+}
+
+.startPage {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.startPage button {
+    margin-top: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: rgb(166, 0, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.gamePage {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamePage h3 {
+    font-size: 2em;
+}
+
+
+.gamePage img {
+    height: 100%;
+    width: 250pt;
+}
+
+.gamePage .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0 ;
+}
+
+.gamePage .options .option {
+    height: 90px;
+    width: 120pt;
+    margin: 0 20px;
+    border: none;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-size: 1.6em;
+    font-weight: 800;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.175, 1.885, 0.32, 1.275);
+}
+
+.gamePage .options .option:hover {
+    transform: scale(1.1);
+}
